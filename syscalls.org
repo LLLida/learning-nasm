@@ -1,0 +1,16 @@
+#+AUTHOR: Adil Mokhammad
+
+* Syscalls on linux
+
+https://chromium.googlesource.com/chromiumos/docs/+/HEAD/constants/syscalls.md#x86-32_bit
+
+| OPCODE | Name            | eax | ebx             | ecx             | edx          |
+|--------+-----------------+-----+-----------------+-----------------+--------------|
+|      0 | restart_syscall |   0 |                 |                 |              |
+|      1 | exit            |   1 | (int)error_code |                 |              |
+|      2 | fork            |   2 |                 |                 |              |
+|      3 | read            |   3 | (uint)fd        | char* buf       | size_t count |
+|      4 | write           |   4 | (uint)fd        | const char* buf | size_t count |
+|        |                 |     |                 |                 |              |
+
+... To be continued.
